@@ -1,0 +1,1 @@
+The RNA-seq data of this study has been deposited in the Genome Sequence Archive (GSA) (https://bigd.big.ac.cn/gsa-human/) with the Accession number: HRA000560

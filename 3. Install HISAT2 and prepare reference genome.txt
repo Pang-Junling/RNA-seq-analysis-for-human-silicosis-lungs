@@ -1,0 +1,13 @@
+1. Download HISAT2 software and install (on linux system)
+  (1) Download the source package from: https://cloud.biohpc.swmed.edu/index.php/s/hisat2-210-Linux_x86_64/download
+  (2) Unzip the file, change to the unzipped directory, and build the HISAT2 tools by running "make"
+
+2. Download the reference genome
+  We downloaded  reference genome for the GRCh38 release 84 version of H. sapiens (human) from Ensembl.
+  ENSEMBL_GRCh38_BASE=ftp://ftp.ensembl.org/pub/release-84/fasta/homo_sapiens/dna
+  ENSEMBL_GRCh38_GTF_BASE=ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens
+
+3. HISAT2 indexes 
+  We downloaded the HISAT2 indexes of the corresponding reference genome related above from the HISAT2 website:
+  "lftpget -c -v ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/data/grch38_snp_tran.tar.gz"
+  Alternatively, one could also build the indexes use the "hisat2-build" function.

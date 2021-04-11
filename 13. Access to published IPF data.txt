@@ -1,0 +1,7 @@
+The DEGs in the lungs of IPF patients (n=36) compared to non-diseased controls (n=19) were accessed from the supplementary materials of published paper (Sivakumar et al., 2019). 
+
+Title: RNA sequencing of transplant-stage idiopathic pulmonary fibrosis lung reveals unique pathway regulation
+
+DOI: 10.1183/23120541.00117-2019
+
+URL: https://www.ncbi.nlm.nih.gov/pubmed/31423451

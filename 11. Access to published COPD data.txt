@@ -1,0 +1,25 @@
+The raw data of the expression profiling for lung tissues of severe COPD (n=111) and controls (n=40) were downloaded from NCBI GEO datasets (GSE76925) (Morrow et al., 2017). The Microarray data was background corrected, log2 transformed and quantile normalized.
+
+Download website:
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE76nnn/GSE76925/matrix/
+
+We extracted the expression matrix (GSE76925_series_matrix.txt) and sample info (GSE76925_design.txt) from the files downloaded.
+
+Then, we use limma to get the differential genes.
+
+The format of the file "GSE76925_series_matrix.txt" is as follows (each row as a gene probe, each column as a sample):
+
+Sample_title    cont1   cont2   cont3   cont4   case1   case2   cont5   case3   case4   case5 ...
+ILMN_1343291	14.7168342958026	14.6383053679389	14.7349061621938	14.9825260342935	14.9825260342935	14.9825260342935	14.7648717740781	15.0892574341896	15.0892574341896	14.8708295757171	...
+
+The format of the file "GSE76925_design.txt" is as follows:
+Sample_title    control case
+cont1   1       0
+cont2   1       0
+cont3   1       0
+cont4   1       0
+case1   0       1
+case2   0       1
+cont5   1       0
+case3   0       1
+case4   0       1

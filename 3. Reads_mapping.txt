@@ -1,8 +1,0 @@
-# Reads mapping with HISAT2
-hisat2 -p 10 --summary-file e1 -x /data/wangj/Ref/human_ensembl/grch38_snp_tran/genome_snp_tran -1 e1_1.fq.gz -2 e1_2.fq.gz -S e1.sam
-
-# Select the uniquely mapped reads
-more e1.sam |awk '{if($0~/^@/ || ($0~/NH:i:1/ && $0!~/NH:i:1\d/)){print $0}}' > e1_uniq.sam
-
-# Sort and transfer SAM to BAM
-samtools sort -@ 8 -o e1_uniq.bam e1_uniq.sam
